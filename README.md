@@ -1,4 +1,4 @@
-# GPU-Accelerated Linear Search
+# CUDA Optimized Algorithms
 
 This repository contains an implementation of a GPU-accelerated linear search algorithm designed to handle extremely large datasets efficiently. Using NVIDIA's CUDA technology through Numba, this project demonstrates how modern GPU computing can vastly improve the performance of a simple linear search algorithm, traditionally a time-consuming operation for large arrays.
 
