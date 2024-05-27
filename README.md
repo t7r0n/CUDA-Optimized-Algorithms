@@ -38,11 +38,11 @@ pip install numba numpy
 3. Execute the script:
 
 ```
-python gpu_linear_search.py
+python linear_Search_numba_V1.py
 ```
 
 ## Usage
-Modify the main() function in gpu_linear_search.py to set the desired array size (N) and target value. By default, the script will search for a randomly selected integer within an array of 1 billion integers.
+Modify the main() function in linear_Search_numba_V1.py to set the desired array size (N) and target value. By default, the script will search for a randomly selected integer within an array of 1 billion integers.
 
 ## Benchmark Results
 
@@ -57,9 +57,6 @@ Contributions to this project are welcome. Please fork the repository and submit
 
 ## License
 This project is open-sourced under the MIT License. See the LICENSE file for more details.
-
-## Contact
-For questions and feedback, please reach out to email@email.com.
 
 ## Acknowledgements
 This project utilizes technologies from NVIDIA CUDA and Numba. Special thanks to the CUDA development team and the contributors of the Numba library for making high-performance GPU computing accessible to developers.
