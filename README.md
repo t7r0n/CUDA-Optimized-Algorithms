@@ -4,7 +4,7 @@ This repository contains an implementation of a GPU-accelerated linear search al
 
 ## Overview
 
-The linear search algorithm is a basic search technique that checks every element in an array until it finds the target value. While straightforward, it becomes computationally expensive as the dataset size increases. This project leverages the parallel processing capabilities of GPUs to accelerate this process, making it feasible to handle datasets as large as 1 billion elements.
+The linear search algorithm is a basic search technique that checks every element in an array until it finds the target value. While straightforward, it becomes computationally expensive as the dataset size increases. This project leverages the parallel processing capabilities of GPUs to accelerate this process, making it feasible to handle datasets as large as 1 Trillion elements.
 
 ## Features
 
