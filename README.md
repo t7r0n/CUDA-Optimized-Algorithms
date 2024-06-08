@@ -4,11 +4,11 @@ This repository contains an implementation of a GPU-accelerated linear search al
 
 ## Overview
 
-The linear search algorithm is a basic search technique that checks every element in an array until it finds the target value. While straightforward, it becomes computationally expensive as the dataset size increases. This project leverages the parallel processing capabilities of GPUs to accelerate this process, making it feasible to handle datasets as large as 1 Trillion elements.
+The linear search algorithm is a basic search technique that checks every element in an array until it finds the target value. While straightforward, it becomes computationally expensive as the dataset size increases. This project leverages the parallel processing capabilities of GPUs to accelerate this process, making it feasible to handle datasets as large as 1 trillion elements.
 
 ## Features
 
-- **Massive Dataset Handling**: Capable of searching through 1 billion integers.
+- **Massive Dataset Handling**: Capable of searching through 1 trillion integers.
 - **High Performance**: Achieves substantial speed improvements over traditional CPU-based searches. Preliminary tests show up to 100 times faster performance compared to sequential CPU implementations.
 - **CUDA Optimization**: Utilizes CUDA's parallel execution model to maximize data throughput and minimize search time.
 - **Memory Efficiency**: Includes checks to ensure the GPU memory is sufficient before attempting the search, preventing crashes and memory errors.
@@ -38,19 +38,22 @@ pip install numba numpy
 3. Execute the script:
 
 ```
-python linear_Search_numba_V1.py
+python linear_Search_numba_V2.py
 ```
 
 ## Usage
-Modify the main() function in linear_Search_numba_V1.py to set the desired array size (N) and target value. By default, the script will search for a randomly selected integer within an array of 1 billion integers.
+Modify the main() function in linear_Search_numba_V2.py to set the desired array size (N) and target value. By default, the script will search for a randomly selected integer within an array of 1 billion integers.
 
 ## Benchmark Results
 
 The following benchmark results illustrate the performance gain of using GPU acceleration:
 
-- CPU (Intel i7-9750h): ~15 minutes
-- GPU (NVIDIA RTX 2070 MaxQ): ~9 seconds
-This represents more than a 100-fold increase in performance, showcasing the potential of GPU computing in data-intensive applications.
+- CPU (Intel i7-9750h): ~160 minutes
+- GPU (NVIDIA RTX 2070 MaxQ): ~14 seconds
+This represents more than a ~685-fold increase in performance, showcasing the potential of GPU computing in data-intensive applications.
+
+## Future Work
+This is the first algorithm in a series of CUDA-optimized algorithms we plan to implement. Stay tuned for more GPU-accelerated algorithms coming soon!
 
 ## Contributing
 Contributions to this project are welcome. Please fork the repository and submit a pull request with your enhancements.
